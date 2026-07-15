@@ -44,31 +44,31 @@ No accounts. No servers. No tracking. Your notes live on your device.
 
 ## 🚀 Features
 
-### 📝 Notes, your way
+### 📝 Your Notes, Your Way
 - **Three note types** — Sermon **Notes**, personal **Trackers** (Prayer, Dream, Vision, Testimony…), and **Bible College** lecture notes.
 - **Templates at creation** — start from a Sermon outline or Lecture skeleton, or a blank page.
 - **Context fields** — Minister (sermon notes) with autocomplete, Course + Lesson (college notes).
 - **Folders** you can create, rename, recolour and re-icon; **pin** notes to the top.
 
-### 📖 Scripture, woven in
+### 📖 Scripture, Woven In
 - **MKJV Bible** bundled offline (66 books).
 - **Verse picker** — search a book, pick chapter & verse (or a range like `JHN 3:16-18`), preview, and drop it in as a chip.
 - **Reference-aware search** — `PSA23:1`, `psa 23.1-3`, `1 cor 13`, `psalms` all just work.
 - **Verse of the day** on the home screen.
 - **Verse cross-references** — tap a verse chip to see every other note that cites it, plus a dedicated **Verse Index** of your most-referenced scriptures.
 
-### 🏷️ Organise & find
+### 🏷️ Organise & Find
 - **Series** field for sermon series, and **colour + icon Tags** you can create and manage.
 - **Full-text search** across notes *and* the entire MKJV.
 - **Multi-select** to bulk move / pin / trash. **Trash** keeps deletions for 30 days with one-tap undo.
 
-### 📎 Rich content
+### 📎 Rich Content
 - **Photo attachments** — snap a slide or handout; auto-downscaled to keep things lean (5 MB / file, 25 MB / note caps).
 - **Reminders** — recurring, with due banners (and OS notifications where supported).
 
-### 🔒 Private & secure
+### 🔒 Private & Secure
 - **PIN app-lock** with a keypad, filling dots, and a custom unlock animation. PINs are PBKDF2-hashed, never stored in plaintext. Auto-locks after time in the background.
-- **Local-first** — everything stays on-device.
+- **Local-first** — all your data stays on-device. 
 
 ### 💾 Portable
 - **Backup & restore** to a JSON file (includes photos and tag styling).
@@ -93,7 +93,7 @@ No accounts. No servers. No tracking. Your notes live on your device.
 
 ---
 
-## 🏁 Getting started (development)
+## 🏁 Getting Started (development)
 
 ```bash
 # 1. Install uv (https://github.com/astral-sh/uv), then sync deps
@@ -110,7 +110,7 @@ uv run flet build apk
 
 ---
 
-## 📦 Release workflow
+## 📦 Release Workflow
 
 Two helper scripts (git-ignored, since they hold local paths/secrets) make releases a two-step affair:
 
@@ -125,11 +125,11 @@ Two helper scripts (git-ignored, since they hold local paths/secrets) make relea
 
 Signing uses **Play App Signing-ready** release keys (your `.jks` is the upload key). Releases are published to the public downloads repo.
 
-📥 **Download the latest APK:** [github.com/3th4n-J/selah-notes-app/releases](https://github.com/3th4n-J/selah-notes-app/releases)
+📥 **Download The Latest APK here:** [github.com/3th4n-J/selah-notes-app/releases](https://github.com/3th4n-J/selah-notes-app/releases)
 
 ---
 
-## 🗂️ Project structure
+## 🗂️ Project Structure
 
 ```
 src/
