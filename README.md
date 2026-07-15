@@ -30,8 +30,6 @@ No accounts. No servers. No tracking. Your notes live on your device.
 
 ## 📸 Screenshots
 
-> _Drop screenshots into `docs/screenshots/` and they'll render below._
-
 <div align="center">
 
 | Home | Note editor | Verse index | Lock screen |
