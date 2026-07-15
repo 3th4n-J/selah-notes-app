@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="src/assets/icon.png" width="120" alt="Selah Notes icon" />
+<img src="docs/screenshots/icon.png" width="120" alt="Selah Notes icon" />
 
 # Selah Notes
 
@@ -159,13 +159,15 @@ Selah Notes is **offline-first and account-free**. Your notes, photos and remind
 
 ---
 
-## 🙏 Acknowledgements & author
+## 🙏 Acknowledgements & Author
 
 Made with care by **Ethan Johnston**.
 
 Scripture text: **Modern King James Version (MKJV)**.
 
-> May this app be a blessing to you. Jesus loves you and wants a deeper relationship with you. ❤️
+> May this app be as much of a blessing to you as it was building it.
+> Jesus loves you and wants a deeper relationship with you.
+> Be blessed.❤️
 
 ---
 
