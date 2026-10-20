@@ -4,9 +4,9 @@
 
 # Selah Notes
 
-**Capture sermon notes and personal spiritual trackers — with the MKJV Bible built right in.**
+**Capture sermon notes and personal spiritual trackers — with a full Bible reader (MKJV, KJV & WEB) built right in.**
 
-[![Version](https://img.shields.io/badge/version-5.2.5-6750A4)](https://github.com/3th4n-J/selah-notes-app/releases)
+[![Version](https://img.shields.io/badge/version-6.1.0-6750A4)](https://github.com/3th4n-J/selah-notes-app/releases)
 [![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](https://github.com/3th4n-J/selah-notes-app/releases)
 [![Built with Flet](https://img.shields.io/badge/built%20with-Flet-00C8FF)](https://flet.dev)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org)
@@ -20,7 +20,7 @@
 
 ## ✨ Overview
 
-**Selah Notes** is a calm, offline-first note-taking app for the everyday church-goer and Bible-college student. Jot sermon notes, keep personal spiritual trackers (prayers, dreams, visions), and study lecture notes — all with the **MKJV Bible** a tap away for pulling verses straight into your notes.
+**Selah Notes** is a calm, offline-first note-taking app for the everyday church-goer and Bible-college student. Jot sermon notes, keep personal spiritual trackers (prayers, dreams, visions), and study lecture notes — all with the **Bible** (MKJV, KJV and WEB) a tap away for pulling verses straight into your notes.
 
 No accounts. No servers. No tracking. Your notes live on your device.
 
@@ -48,17 +48,28 @@ No accounts. No servers. No tracking. Your notes live on your device.
 - **Context fields** — Minister (sermon notes) with autocomplete, Course + Lesson (college notes).
 - **Folders** you can create, rename, recolour and re-icon; **pin** notes to the top.
 
+### ✍️ Writing Experience
+- **Auto verse chips** - type `John 3:16` or `1 Cor 13:4-7` and it becomes a chip; tap one for a sheet with prev/next verse and the full chapter, your passage highlighted.
+- **`[[Note links]]` + backlinks**, **focus mode** (distraction-free, screen stays on), live word count and **draft autosave** with restore.
+- **Continue writing** card on the home screen.
+
 ### 📖 Scripture, Woven In
-- **MKJV Bible** bundled offline (66 books).
+- **Three Bible translations** bundled offline (66 books each): **MKJV**, **KJV** and **WEB**. Pick your default in *Settings → Bible*; the reader and every verse sheet can switch on the spot.
+- **Bible reader** (home → *Bible*) — book/chapter navigator (type a reference like `john 3` to jump), prev/next chapter, remembers where you stopped. Tap a verse to **highlight** it (4 colours), **bookmark** it, **copy**, **share**, or **add it to a note** as a verse chip. A **Bookmarks** page lists your bookmarks and highlights; both are included in backups.
 - **Verse picker** — search a book, pick chapter & verse (or a range like `JHN 3:16-18`), preview, and drop it in as a chip.
 - **Reference-aware search** — `PSA23:1`, `psa 23.1-3`, `1 cor 13`, `psalms` all just work.
 - **Verse of the day** on the home screen.
 - **Verse cross-references** — tap a verse chip to see every other note that cites it, plus a dedicated **Verse Index** of your most-referenced scriptures.
 
+### 📚 Series, Prayer & Insights
+- **Series** view: every sermon in a series in preaching order.
+- **Prayer timeline**: trackers by month, mark prayers *answered* (with date) and see how long it took.
+- **Insights**: notes per month, who you hear from, a 66-book scripture heatmap, writing streak.
+
 ### 🏷️ Organise & Find
 - **Series** field for sermon series, and **colour + icon Tags** you can create and manage.
-- **Full-text search** across notes *and* the entire MKJV.
-- **Multi-select** to bulk move / pin / trash. **Trash** keeps deletions for 30 days with one-tap undo.
+- **Full-text search** across notes *and* the entire Bible (in your default translation), with **filters** (type, tag, minister, prayer status, date range) and **saved searches**.
+- **Multi-select** to bulk move / pin / trash / **export & share** (Selah bundle `.snn`, **PDF** or readable `.md`). **Trash** keeps deletions for 30 days with one-tap undo.
 
 ### 📎 Rich Content
 - **Photo attachments** — snap a slide or handout; auto-downscaled to keep things lean (5 MB / file, 25 MB / note caps).
@@ -69,11 +80,17 @@ No accounts. No servers. No tracking. Your notes live on your device.
 - **Local-first** — all your data stays on-device. 
 
 ### 💾 Portable
-- **Backup & restore** to a JSON file (includes photos and tag styling).
+- **Backup & restore** to a JSON file (includes photos, tag styling, bookmarks and highlights).
 - **`.snn` note files** — share a single note (all metadata + photos) and import it on another device with full fidelity.
+- **PDF export** — one styled note, or a bundle with cover page, contents grouped by series and PDF bookmarks. Multi-select notes (or use the export icon in the editor) → **Selah bundle / PDF / text**.
+
+### ♿ Accessibility
+- **Reading text size** (100-170%) for notes and scripture, on top of your phone's font size.
+- **High contrast**, **reduce motion**, **haptics on/off**, configurable **auto-lock timing**.
+- Bundled **Atkinson Hyperlegible** font (SIL OFL) designed for low-vision readers; labelled controls for TalkBack.
 
 ### 🎨 Polished
-- Light / Dark / System themes, **accent palettes** (+ custom colour), app & scripture fonts.
+- Light / Dark / System themes (plus **pure-black AMOLED**), **accent palettes** (+ custom colour), app & scripture fonts.
 - Collapsible detail panes, smooth route transitions, tasteful animations, a personal birthday greeting, and an in-app **update checker**.
 
 ---
@@ -83,8 +100,8 @@ No accounts. No servers. No tracking. Your notes live on your device.
 | | |
 |---|---|
 | **Language** | Python 3.10+ |
-| **UI** | [Flet](https://flet.dev) 0.85.3 (Flutter under the hood) |
-| **Storage** | SQLite — `MKJV.db` (read-only scripture) + `userDB.db` (your data) |
+| **UI** | [Flet](https://flet.dev) 1.0.4 (Flutter under the hood) |
+| **Storage** | SQLite — `MKJV.db`, `KJV.db`, `WEB.db` (read-only scripture, same schema) + `userDB.db` (your data) |
 | **Imaging** | Pillow (photo downscale/re-encode) |
 | **Tooling** | [uv](https://github.com/astral-sh/uv) for env & builds |
 | **Extensions** | `flet-local-notifications` (vendored) for OS reminders |
@@ -132,11 +149,14 @@ Signing uses **Play App Signing-ready** release keys (your `.jks` is the upload 
 ```
 src/
 ├─ main.py                # entry point: theming, routing, app-lock gate, lifecycle
-├─ assets/                # MKJV.db, fonts, icon, splash, unlock animation
+├─ assets/                # MKJV.db / KJV.db / WEB.db, fonts, icon, splash, unlock animation
 └─ app/
    ├─ config.py           # constants, palettes, templates, version
    ├─ db.py               # SQLite data layer (notes, tags, photos, backup, .snn)
    ├─ prefs.py            # JSON preferences + transient nav state
+   ├─ a11y.py             # accessibility prefs: reading size, contrast, motion, haptics
+   ├─ drafts.py           # unsaved-edit drafts (crash safety net)
+   ├─ searches.py         # search filters + saved searches
    ├─ security.py         # PIN hashing (PBKDF2)
    ├─ media.py            # photo downscale/re-encode
    ├─ theme.py            # Material 3 theming + accent handling
@@ -144,7 +164,7 @@ src/
    ├─ updates.py          # in-app GitHub release check
    ├─ verse_picker.py     # MKJV verse picker
    └─ views/              # home, editor, folder, search, settings, reminders,
-                          # trash, verses, lock
+                          # trash, verses, lock, series, timeline, insights, bible, bookmarks
 extensions/               # vendored flet-local-notifications
 flet-build-template/      # vendored build template (desugaring patch)
 ```
@@ -161,7 +181,10 @@ Selah Notes is **offline-first and account-free**. Your notes, photos and remind
 
 Made with care by **Ethan Johnston**.
 
-Scripture text: **Modern King James Version (MKJV)**.
+Scripture text:
+- **Modern King James Version (MKJV)**.
+- **King James Version (KJV)**, 1769 text — public domain in most of the world; in the United Kingdom the Crown holds letters patent over the KJV (administered through Cambridge University Press). Sourced from [scrollmapper/bible_databases](https://github.com/scrollmapper/bible_databases) (MIT).
+- **World English Bible (WEB)**, 2020 stable text from [eBible.org](https://ebible.org/web/) — public domain. *"World English Bible"* is a trademark of eBible.org; the text is bundled unmodified (verses the WEB omits are simply absent).
 
 > May this app be as much of a blessing to you as it was building it.
 > Jesus loves you and wants a deeper relationship with you.
